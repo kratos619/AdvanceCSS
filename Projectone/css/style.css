@@ -78,14 +78,6 @@ body {
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0; }
 
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #7ed56f98, #28b485ad), url(../img/hero.jpg);
@@ -133,3 +125,12 @@ Dark green: #28b485
   letter-spacing: 17.4px;
   animation: moveInRight 2s;
   animation-timing-function: ease-out; }
+
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
