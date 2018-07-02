@@ -26,6 +26,32 @@ body {
   animation: moveInRight 2s;
   animation-timing-function: ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.headign-tertiary {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 30px; }
+
 *,
 *::after,
 *::before {
@@ -38,6 +64,20 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem;
+  margin-top: -19vh; }
 
 @keyframes moveInLeft {
   0% {
@@ -101,6 +141,24 @@ body {
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0px); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #7ed56f98, #28b485ad), url(../img/hero.jpg);
@@ -131,7 +189,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: gray;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -140,7 +197,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: red;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 2rem; }
