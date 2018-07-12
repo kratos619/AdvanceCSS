@@ -1,3 +1,11 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -98,6 +106,33 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05);
+      box-shadow: 0 2.6rem 4rem;
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .btn:link,
 .btn:visited {
@@ -212,12 +247,3 @@ body {
     width: calc(2 * ((100% - 3 * 2rem)/4) + 2rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 2rem)/4) + 2 * 2rem); }
-
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
