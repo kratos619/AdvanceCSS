@@ -87,6 +87,11 @@ body {
   padding: 25rem;
   margin-top: -19vh; }
 
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f98, #28b485ad), url(../img/nat-4.jpg);
+  background-size: cover; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -193,6 +198,16 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0px); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5px; }
 
 .header {
   height: 95vh;

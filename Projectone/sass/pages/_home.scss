@@ -1,6 +1,12 @@
-
 .section-about {
-    background-color: $color-grey-light-1;
-    padding: 25rem;
-    margin-top: -19vh;
+  background-color: $color-grey-light-1;
+  padding: 25rem;
+  margin-top: -19vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f98, #28b485ad),
+    url(../img/nat-4.jpg);
+  background-size: cover;
 }
